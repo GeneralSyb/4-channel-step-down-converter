@@ -1,0 +1,72 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Barrel_Jack_MountingPin
+#
+DEF Connector_Barrel_Jack_MountingPin J 0 20 Y N 1 F N
+F0 "J" 0 210 50 H V C CNN
+F1 "Connector_Barrel_Jack_MountingPin" 50 -250 50 H V L CNN
+F2 "" 50 -40 50 H I C CNN
+F3 "" 50 -40 50 H I C CNN
+$FPLIST
+ BarrelJack*
+$ENDFPLIST
+DRAW
+A -130 100 25 901 -901 0 1 10 F -130 125 -130 75
+A -130 100 25 901 -901 0 1 10 N -130 125 -130 75
+T 0 0 -165 15 0 1 1 Mounting Normal 0 C C
+S -200 150 200 -150 0 1 10 f
+S 145 125 -130 75 0 1 10 F
+P 2 0 1 10 200 100 150 100 N
+P 6 0 1 10 -150 -100 -100 -100 -50 -50 0 -100 100 -100 200 -100 N
+P 2 1 1 6 -40 -180 40 -180 N
+X ~ 1 300 100 100 L 50 50 1 1 P
+X ~ 2 300 -100 100 L 50 50 1 1 P
+X MountPin MP 0 -300 120 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Screw_Terminal_01x02
+#
+DEF Connector_Screw_Terminal_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Screw_Terminal_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TerminalBlock*:*
+$ENDFPLIST
+DRAW
+C 0 -100 25 1 1 6 N
+C 0 0 25 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+P 2 1 1 6 -21 -87 13 -120 N
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -14 -80 20 -113 N
+P 2 1 1 6 -14 20 20 -13 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Step-down_converters_D-SUN(green)_SDC
+#
+DEF Step-down_converters_D-SUN(green)_SDC U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "Step-down_converters_D-SUN(green)_SDC" 0 0 50 H V C CNN
+F2 "Step-down converters:D-SUN(green) SDC" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -250 -100 250 -500 0 1 0 N
+X in+ 1 -350 -150 100 R 50 50 1 1 I
+X in+ 2 -350 -250 100 R 50 50 1 1 I
+X in- 3 -350 -350 100 R 50 50 1 1 I
+X in- 4 -350 -450 100 R 50 50 1 1 I
+X out+ 5 350 -150 100 L 50 50 1 1 I
+X out+ 6 350 -250 100 L 50 50 1 1 I
+X out- 7 350 -350 100 L 50 50 1 1 I
+X out- 8 350 -450 100 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
