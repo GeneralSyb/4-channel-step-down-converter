@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Step-down~converters:D-SUN(green)_SDC U1
+L PDB-rescue:D-SUN(green)_SDC-Step-down_converters U1
 U 1 1 634D8815
 P 3700 3100
 F 0 "U1" H 3700 3175 50  0000 C CNN
@@ -48,7 +48,7 @@ Wire Wire Line
 Wire Wire Line
 	4250 3950 3950 3950
 $Comp
-L Step-down~converters:D-SUN(green)_SDC U2
+L PDB-rescue:D-SUN(green)_SDC-Step-down_converters U2
 U 1 1 634DE363
 P 4950 3100
 F 0 "U2" H 4950 3175 50  0000 C CNN
@@ -82,7 +82,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 3950 5200 3950
 $Comp
-L Step-down~converters:D-SUN(green)_SDC U3
+L PDB-rescue:D-SUN(green)_SDC-Step-down_converters U3
 U 1 1 634E0C7B
 P 6200 3100
 F 0 "U3" H 6200 3175 50  0000 C CNN
@@ -116,7 +116,7 @@ Wire Wire Line
 Wire Wire Line
 	6750 3950 6450 3950
 $Comp
-L Step-down~converters:D-SUN(green)_SDC U4
+L PDB-rescue:D-SUN(green)_SDC-Step-down_converters U4
 U 1 1 634E0D21
 P 7450 3100
 F 0 "U4" H 7450 3175 50  0000 C CNN
@@ -161,7 +161,7 @@ F 3 "~" H 2200 2850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2400 2850 3200 2850
+	2400 2850 2500 2850
 Wire Wire Line
 	6950 2850 6950 3250
 Wire Wire Line
@@ -172,7 +172,7 @@ Wire Wire Line
 	5700 3250 5700 2850
 Connection ~ 5700 2850
 Wire Wire Line
-	5700 2850 6950 2850
+	5700 2850 6600 2850
 Wire Wire Line
 	4600 3250 4450 3250
 Wire Wire Line
@@ -188,7 +188,7 @@ Connection ~ 3200 2850
 Wire Wire Line
 	3200 2850 4450 2850
 Wire Wire Line
-	2400 2750 3150 2750
+	2400 2750 2600 2750
 Wire Wire Line
 	6900 2750 6900 3450
 Wire Wire Line
@@ -199,7 +199,7 @@ Wire Wire Line
 	5650 3450 5850 3450
 Connection ~ 5650 2750
 Wire Wire Line
-	5650 2750 6900 2750
+	5650 2750 6700 2750
 Wire Wire Line
 	4400 2750 4400 3450
 Wire Wire Line
@@ -214,4 +214,158 @@ Wire Wire Line
 Connection ~ 3150 2750
 Wire Wire Line
 	3150 2750 4400 2750
+$Comp
+L PDB-rescue:D-SUN(green)_SDC-Step-down_converters U5
+U 1 1 6353F308
+P 3300 1750
+F 0 "U5" H 3300 1825 50  0000 C CNN
+F 1 "D-SUN(green)_SDC" H 3300 1734 50  0000 C CNN
+F 2 "Step-down converters:D-SUN(green) SDC" H 3300 1750 50  0001 C CNN
+F 3 "" H 3300 1750 50  0001 C CNN
+	1    3300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L ESP32_Dev_Boards:Wemos-ESP32-S2-Mini U6
+U 1 1 6353F0F5
+P 4750 850
+F 0 "U6" H 4670 925 50  0000 C CNN
+F 1 "Wemos-ESP32-S2-Mini" H 4670 834 50  0000 C CNN
+F 2 "Wemos ESP-32 S2 Mini:Wemos ESP-32 S2 Mini" H 4750 850 50  0001 C CNN
+F 3 "" H 4750 850 50  0001 C CNN
+	1    4750 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1900 3950 1900
+Wire Wire Line
+	3950 1900 3950 1000
+Wire Wire Line
+	3950 1000 4400 1000
+Wire Wire Line
+	3650 2100 4100 2100
+Wire Wire Line
+	4100 2100 4100 1200
+Wire Wire Line
+	4100 1200 4400 1200
+Wire Wire Line
+	2600 2750 2600 2100
+Wire Wire Line
+	2600 2100 2950 2100
+Connection ~ 2600 2750
+Wire Wire Line
+	2600 2750 3150 2750
+Wire Wire Line
+	2500 2850 2500 1900
+Wire Wire Line
+	2500 1900 2950 1900
+Connection ~ 2500 2850
+Wire Wire Line
+	2500 2850 3200 2850
+Wire Wire Line
+	4400 1700 4250 1700
+Wire Wire Line
+	4250 1700 4250 2600
+Wire Wire Line
+	4250 2600 5400 2600
+Wire Wire Line
+	5400 2600 5400 1550
+Wire Wire Line
+	5400 1550 5750 1550
+Wire Wire Line
+	5050 2000 5250 2000
+Wire Wire Line
+	5250 2000 5250 1650
+Wire Wire Line
+	5250 1650 5750 1650
+Wire Wire Line
+	5750 1450 5450 1450
+Wire Wire Line
+	5450 1450 5450 2650
+Wire Wire Line
+	5450 2650 4200 2650
+Wire Wire Line
+	4200 2650 4200 1300
+Wire Wire Line
+	4200 1300 4400 1300
+Wire Wire Line
+	4400 1600 3900 1600
+Wire Wire Line
+	3900 1600 3900 700 
+Wire Wire Line
+	3900 700  5500 700 
+Wire Wire Line
+	5500 700  5500 2250
+Wire Wire Line
+	5500 2250 5750 2250
+Wire Wire Line
+	4400 1800 3850 1800
+Wire Wire Line
+	3850 1800 3850 650 
+Wire Wire Line
+	3850 650  5550 650 
+Wire Wire Line
+	5550 650  5550 2350
+Wire Wire Line
+	5550 2350 5750 2350
+$Comp
+L Connector:Conn_01x04_Female J6
+U 1 1 6355425D
+P 7600 1850
+F 0 "J6" H 7628 1826 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 7628 1735 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 7600 1850 50  0001 C CNN
+F 3 "~" H 7600 1850 50  0001 C CNN
+	1    7600 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2000 6850 1750
+Wire Wire Line
+	6850 1750 7400 1750
+Wire Wire Line
+	6900 2100 6900 1850
+Wire Wire Line
+	6900 1850 7400 1850
+Wire Wire Line
+	6450 2100 6900 2100
+Wire Wire Line
+	6450 2000 6850 2000
+$Comp
+L Stepper_motor_drivers:EasyDrive U7
+U 1 1 6354163F
+P 6100 1300
+F 0 "U7" H 6110 1415 50  0000 C CNN
+F 1 "EasyDrive" H 6110 1324 50  0000 C CNN
+F 2 "Stepper motor driver:EasyDriver" H 6100 1300 50  0001 C CNN
+F 3 "" H 6100 1300 50  0001 C CNN
+	1    6100 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2250 6950 2250
+Wire Wire Line
+	6950 2250 6950 1950
+Wire Wire Line
+	6950 1950 7400 1950
+Wire Wire Line
+	6450 2350 7000 2350
+Wire Wire Line
+	7000 2350 7000 2050
+Wire Wire Line
+	7000 2050 7400 2050
+Wire Wire Line
+	6700 2750 6700 1450
+Wire Wire Line
+	6700 1450 6450 1450
+Connection ~ 6700 2750
+Wire Wire Line
+	6700 2750 6900 2750
+Wire Wire Line
+	6600 2850 6600 1550
+Wire Wire Line
+	6600 1550 6450 1550
+Connection ~ 6600 2850
+Wire Wire Line
+	6600 2850 6950 2850
 $EndSCHEMATC
